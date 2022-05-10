@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BB675E3C-D8FB-49F3-9E24-581F1F0AE5B3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SecurityPlus</RootNamespace>
+    <AssemblyName>SecurityPlus</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublicSign>false</PublicSign>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="INIFileParser, Version=2.5.2.0, Culture=neutral, PublicKeyToken=79af7b307b65cf3c">
+      <HintPath>packages\ini-parser.2.5.2\lib\net20\INIFileParser.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="LSPD First Response, Version=0.4.7800.3124, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\References\LSPD First Response.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="RAGENativeUI, Version=1.7.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\References\RAGENativeUI.dll</HintPath>
+    </Reference>
+    <Reference Include="RagePluginHook, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\References\RagePluginHookSDK.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Callouts\Blaine\ArmouredCarDriverNeededHtoP.cs" />
+    <Compile Include="Callouts\Blaine\ArmouredCarDriverNeededPtoH.cs" />
+    <Compile Include="Callouts\Blaine\BankTellerSusPersonBlaine.cs" />
+    <Compile Include="Callouts\Blaine\CasingYouTool.cs" />
+    <Compile Include="Callouts\Blaine\CodeAdamYouTool.cs" />
+    <Compile Include="Callouts\Blaine\FakeCredentialsPower.cs" />
+    <Compile Include="Callouts\Blaine\FakeCredentialsQuarry.cs" />
+    <Compile Include="Callouts\Blaine\GuardDutyPaletoBank.cs" />
+    <Compile Include="Callouts\Blaine\LoiterHookies.cs" />
+    <Compile Include="Callouts\Blaine\LoiterLoggerBar.cs" />
+    <Compile Include="Callouts\Blaine\OpenCarryGlobeOil.cs" />
+    <Compile Include="Callouts\Blaine\OpenCarryLoggerBar.cs" />
+    <Compile Include="Callouts\Blaine\OpenCarryYouTool.cs" />
+    <Compile Include="Callouts\Blaine\RefusingToPayHookies.cs" />
+    <Compile Include="Callouts\Blaine\RefusingToPayLoggerBar.cs" />
+    <Compile Include="Callouts\DavisMegaMall\CasingDavisMegaMall.cs" />
+    <Compile Include="Callouts\DavisMegaMall\CodeAdamDavisMegaMall.cs" />
+    <Compile Include="Callouts\Grapeseed\CasingGrapeseed.cs" />
+    <Compile Include="Callouts\Grapeseed\CasingGrapeseed2.cs" />
+    <Compile Include="Callouts\Grapeseed\CodeAdamGrapeseed.cs" />
+    <Compile Include="Callouts\Grapeseed\LoiterGrapeseed.cs" />
+    <Compile Include="Callouts\Grapeseed\OpenCarryGrapeseed.cs" />
+    <Compile Include="Callouts\Grapeseed\OpenCarryGrapeseed2.cs" />
+    <Compile Include="Callouts\Harmony\BankTellerSusPersonHarmony.cs" />
+    <Compile Include="Callouts\Harmony\CasingHarmony.cs" />
+    <Compile Include="Callouts\Harmony\CasingHarmony2.cs" />
+    <Compile Include="Callouts\Harmony\CasingHarmony3.cs" />
+    <Compile Include="Callouts\Harmony\CodeAdamHarmony.cs" />
+    <Compile Include="Callouts\Harmony\CodeAdamHarmony2.cs" />
+    <Compile Include="Callouts\Harmony\GuardDutyFleeca68.cs" />
+    <Compile Include="Callouts\Harmony\LoiterHarmony.cs" />
+    <Compile Include="Callouts\Harmony\OpenCarryHarmony.cs" />
+    <Compile Include="Callouts\Harmony\OpenCarryHarmony2.cs" />
+    <Compile Include="Callouts\Harmony\OpenCarryHarmony3.cs" />
+    <Compile Include="Callouts\LS County\BankTellerSusPersonLSC.cs" />
+    <Compile Include="Callouts\LS County\CasingLSC.cs" />
+    <Compile Include="Callouts\LS County\CodeAdamLSC.cs" />
+    <Compile Include="Callouts\LS County\FakeCredentialsNOOSE.cs" />
+    <Compile Include="Callouts\LS County\LoiterLSC.cs" />
+    <Compile Include="Callouts\LS County\RefusingToPayLSC.cs" />
+    <Compile Include="Callouts\LS\ArmouredCarEscortCasino.cs" />
+    <Compile Include="Callouts\LS\BankTellerSusPersonLSAlta.cs" />
+    <Compile Include="Callouts\LS\BankTellerSusPersonLSBurton.cs" />
+    <Compile Include="Callouts\LS\BankTellerSusPersonLSDelPerro.cs" />
+    <Compile Include="Callouts\LS\BankTellerSusPersonLSMetro.cs" />
+    <Compile Include="Callouts\LS\BankTellerSusPersonLSPillbox.cs" />
+    <Compile Include="Callouts\LS\CasingLS.cs" />
+    <Compile Include="Callouts\LS\CasingLS2.cs" />
+    <Compile Include="Callouts\LS\CasingLS3.cs" />
+    <Compile Include="Callouts\LS\CasingLS4.cs" />
+    <Compile Include="Callouts\LS\CasingLS5.cs" />
+    <Compile Include="Callouts\LS\CasingLS6.cs" />
+    <Compile Include="Callouts\LS\CasingLS7.cs" />
+    <Compile Include="Callouts\LS\CasingLS8.cs" />
+    <Compile Include="Callouts\LS\CasingLS9.cs" />
+    <Compile Include="Callouts\LS\CodeAdamLS.cs" />
+    <Compile Include="Callouts\LS\CodeAdamLS10.cs" />
+    <Compile Include="Callouts\LS\CodeAdamLS2.cs" />
+    <Compile Include="Callouts\LS\CodeAdamLS3.cs" />
+    <Compile Include="Callouts\LS\CodeAdamLS4.cs" />
+    <Compile Include="Callouts\LS\CodeAdamLS5.cs" />
+    <Compile Include="Callouts\LS\CodeAdamLS6.cs" />
+    <Compile Include="Callouts\LS\CodeAdamLS7.cs" />
+    <Compile Include="Callouts\LS\CodeAdamLS8.cs" />
+    <Compile Include="Callouts\LS\CodeAdamLS9.cs" />
+    <Compile Include="Callouts\LS\FakeCredentialsBoatThing.cs" />
+    <Compile Include="Callouts\LS\FakeCredentialsHelipad.cs" />
+    <Compile Include="Callouts\LS\FakeCredentialsLSIA.cs" />
+    <Compile Include="Callouts\LS\GuardDutyLSAltaBank.cs" />
+    <Compile Include="Callouts\LS\GuardDutyLSDelPerroBank.cs" />
+    <Compile Include="Callouts\LS\GuardDutyLSPillboxBank.cs" />
+    <Compile Include="Callouts\LS\GuardDutyPacificStandardBank.cs" />
+    <Compile Include="Callouts\LS\LoiterLS.cs" />
+    <Compile Include="Callouts\LS\LoiterLS2.cs" />
+    <Compile Include="Callouts\LS\LoiterLS3.cs" />
+    <Compile Include="Callouts\LS\LoiterLS4.cs" />
+    <Compile Include="Callouts\LS\LoiterLS5.cs" />
+    <Compile Include="Callouts\LS\LoiterLS6.cs" />
+    <Compile Include="Callouts\LS\LoiterLS7.cs" />
+    <Compile Include="Callouts\LS\LoiterLS8.cs" />
+    <Compile Include="Callouts\LS\LoiterLS9.cs" />
+    <Compile Include="Callouts\LS\OpenCarryLS.cs" />
+    <Compile Include="Callouts\LS\OpenCarryLS2.cs" />
+    <Compile Include="Callouts\LS\OpenCarryLS3.cs" />
+    <Compile Include="Callouts\LS\OpenCarryLS4.cs" />
+    <Compile Include="Callouts\LS\OpenCarryLS5.cs" />
+    <Compile Include="Callouts\LS\OpenCarryLS6.cs" />
+    <Compile Include="Callouts\LS\OpenCarryLS7.cs" />
+    <Compile Include="Callouts\LS\OpenCarryLS8.cs" />
+    <Compile Include="Callouts\LS\OpenCarryLS9.cs" />
+    <Compile Include="Callouts\LS\RefusingToPayAldentes.cs" />
+    <Compile Include="Callouts\LS\RefusingToPayCaseys.cs" />
+    <Compile Include="Callouts\LS\RefusingToPayUPAB.cs" />
+    <Compile Include="Callouts\LS\ResidenceAlarmMike.cs" />
+    <Compile Include="Callouts\Paleto\CasingPaleto.cs" />
+    <Compile Include="Callouts\Paleto\CodeAdamPaleto.cs" />
+    <Compile Include="Callouts\Paleto\CodeAdamPaleto2.cs" />
+    <Compile Include="Callouts\Paleto\LoiterPaleto.cs" />
+    <Compile Include="Callouts\Paleto\LoiterPaleto2.cs" />
+    <Compile Include="Callouts\Paleto\OpenCarryPaleto.cs" />
+    <Compile Include="Callouts\Paleto\OpenCarryPaleto2.cs" />
+    <Compile Include="Callouts\Paleto\OpenCarryPaleto3.cs" />
+    <Compile Include="Callouts\Paleto\OpenCarryPaleto4.cs" />
+    <Compile Include="Callouts\Paleto\RefusingToPayPaleto.cs" />
+    <Compile Include="Callouts\Sandy Shores\CasingSandy.cs" />
+    <Compile Include="Callouts\Sandy Shores\CodeAdamSandy.cs" />
+    <Compile Include="Callouts\Sandy Shores\LoiterSandy.cs" />
+    <Compile Include="Callouts\Sandy Shores\LoiterSandy2.cs" />
+    <Compile Include="Callouts\Sandy Shores\OpenCarrySandy.cs" />
+    <Compile Include="Callouts\Sandy Shores\OpenCarrySandy2.cs" />
+    <Compile Include="Callouts\Sandy Shores\RefusingToPayYellojack.cs" />
+    <Compile Include="Callouts\Sandy Shores\SheriffRequestingSecurity.cs" />
+    <Compile Include="Callouts\ULSA\StudentFeelingUnsafe1.cs" />
+    <Compile Include="Callouts\ULSA\StudentFeelingUnsafe2.cs" />
+    <Compile Include="Callouts\ULSA\StudentRequestingHelp1.cs" />
+    <Compile Include="Callouts\ULSA\StudentRequestingHelp2.cs" />
+    <Compile Include="Callouts\ULSA\ULSACampusAttack.cs" />
+    <Compile Include="IniFile.cs" />
+    <Compile Include="Location.cs" />
+    <Compile Include="Log.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="key.snk" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+         Other similar extension points exist, see Microsoft.Common.targets.
+    <Target Name="BeforeBuild">
+    </Target>
+    <Target Name="AfterBuild">
+    </Target>
+    -->
+</Project>

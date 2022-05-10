@@ -1,0 +1,13 @@
+﻿# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/modules.xml
+/projectSettingsUpdater.xml
+/contentModel.xml
+/.idea.SecurityPlus.iml
+# Datasource local storage ignored files
+/../../../../../../../../../../../:\Users\Owner\Desktop\Bugs Bunny's Pocket\Active production\Security+ Development\SecurityPlus\.idea\.idea.SecurityPlus\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
