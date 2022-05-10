@@ -1,0 +1,91 @@
+<Agencies>
+	<Agency>
+		<Name>Gruppe Sechs Security</Name>
+		<ShortName>GRU</ShortName>
+		<ScriptName>gru</ScriptName>
+		<TextureDictionary>dia_police</TextureDictionary>
+		<TextureName>dia_police</TextureName>
+		<Inventory>patrol</Inventory>
+		<Loadout chance="50">
+			<Name>Response Unit</Name>
+			<Vehicles>
+				<Vehicle>cvpi</Vehicle>
+				<Vehicle>charger</Vehicle>
+			</Vehicles>
+			<Peds>
+				<!-- 50% chance of male peds -->
+					<!-- 1/3 of a chance outfit A -->
+					<Ped chance="16" outfit="gru_class_a" inventory="grupatrol">mp_m_freemode_01</Ped> 
+					<!-- 1/3 of a chance outfit B -->
+					<Ped chance="16" outfit="gru_class_b" inventory="grupatrol">mp_m_freemode_01</Ped> 
+					<!-- 1/3 of a chance outfit C -->
+					<Ped chance="16" outfit="gru_class_c" inventory="grupatrol">mp_m_freemode_01</Ped> 
+				<!-- 50% chance of female peds -->
+					<!-- 1/3 of a chance outfit A -->
+					<Ped chance="16" outfit="gru_class_a" inventory="grupatrol">mp_f_freemode_01</Ped> 
+					<!-- 1/3 of a chance outfit B -->
+					<Ped chance="16" outfit="gru_class_b" inventory="grupatrol">mp_f_freemode_01</Ped> 
+					<!-- 1/3 of a chance outfit C -->
+					<Ped chance="16" outfit="gru_class_c" inventory="grupatrol">mp_f_freemode_01</Ped> 
+			</Peds>
+			<NumPeds min="1" max="2" />
+			<Flags>
+				<Flag>RespondsAsTransport</Flag> <!-- Makes the unit eligible to be called for prisoner transport.  Only use this if there will be free seats for prisoners. -->
+				<Flag>RespondsAsBackup</Flag>    <!-- Makes the unit eligible to be called as either Code 2, Code 3 or Pursuit backup. -->
+				<Flag>SpawnsAmbiently</Flag>     <!-- Makes the unit eligible to spawn ambiently - e.g. on patrol in the area or outside of police stations -->
+			</Flags>
+		</Loadout>
+		<Loadout chance="40">
+			<Name>Armoured Response Unit</Name>
+			<Vehicles>
+				<Vehicle>fpiu</Vehicle>
+			</Vehicles>
+			<Peds>
+				<!-- 50% chance of male peds -->
+					<!-- 1/3 of a chance outfit A -->
+					<Ped chance="16" outfit="gru_armoured_a" inventory="gruswat">mp_m_freemode_01</Ped> 
+					<!-- 1/3 of a chance outfit B -->
+					<Ped chance="16" outfit="gru_armoured_b" inventory="gruswat">mp_m_freemode_01</Ped> 
+					<!-- 1/3 of a chance outfit C -->
+					<Ped chance="16" outfit="gru_armoured_c" inventory="gruswat">mp_m_freemode_01</Ped> 
+				<!-- 50% chance of female peds -->
+					<!-- 1/3 of a chance outfit A -->
+					<Ped chance="16" outfit="gru_armoured_a" inventory="gruswat">mp_f_freemode_01</Ped> 
+					<!-- 1/3 of a chance outfit B -->
+					<Ped chance="16" outfit="gru_armoured_b" inventory="gruswat">mp_f_freemode_01</Ped> 
+					<!-- 1/3 of a chance outfit C -->
+					<Ped chance="16" outfit="gru_armoured_c" inventory="gruswat">mp_f_freemode_01</Ped> 
+			</Peds>
+			<NumPeds min="2" max="4" />
+			<Flags>
+				<Flag>RespondsAsTransport</Flag> <!-- Makes the unit eligible to be called for prisoner transport.  Only use this if there will be free seats for prisoners. -->
+				<Flag>RespondsAsBackup</Flag>    <!-- Makes the unit eligible to be called as either Code 2, Code 3 or Pursuit backup. -->
+				<Flag>SpawnsAmbiently</Flag>     <!-- Makes the unit eligible to spawn ambiently - e.g. on patrol in the area or outside of police stations -->
+			</Flags>
+		</Loadout>
+		<Loadout chance="10">
+			<Name>Armoured Transport Unit</Name>
+			<Vehicles>
+				<Vehicle>armouredcar</Vehicle>
+			</Vehicles>
+			<Peds>
+				<!-- 50% chance of male peds -->
+					<!-- 1/2 of a chance outfit A -->
+					<Ped chance="25" outfit="gru_transport_a" inventory="grutransport">mp_m_freemode_01</Ped> 
+					<!-- 1/2 of a chance outfit B -->
+					<Ped chance="25" outfit="gru_transport_b" inventory="grutransport">mp_m_freemode_01</Ped> 
+				<!-- 50% chance of female peds -->
+					<!-- 1/2 of a chance outfit A -->
+					<Ped chance="25" outfit="gru_transport_a" inventory="grutransport">mp_f_freemode_01</Ped> 
+					<!-- 1/2 of a chance outfit B -->
+					<Ped chance="25" outfit="gru_transport_b" inventory="grutransport">mp_f_freemode_01</Ped> 
+			</Peds>
+			<NumPeds min="2" max="2" />
+			<Flags>
+				<Flag>RespondsAsTransport</Flag> <!-- Makes the unit eligible to be called for prisoner transport.  Only use this if there will be free seats for prisoners. -->
+				<Flag>RespondsAsBackup</Flag>    <!-- Makes the unit eligible to be called as either Code 2, Code 3 or Pursuit backup. -->
+				<Flag>SpawnsAmbiently</Flag>     <!-- Makes the unit eligible to spawn ambiently - e.g. on patrol in the area or outside of police stations -->
+			</Flags>
+		</Loadout>
+	</Agency>
+</Agencies>

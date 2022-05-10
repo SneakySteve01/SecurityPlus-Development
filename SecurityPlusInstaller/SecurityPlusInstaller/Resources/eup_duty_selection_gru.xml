@@ -1,0 +1,14 @@
+<Duty>
+    <Peds>
+        <Agency>gru</Agency>
+    </Peds>
+    <Vehicles>
+        <Agency>gru</Agency>
+    </Vehicles>
+    <VehicleDescriptions>
+        <Description name="CVPI" fullName="Ford Crown Victoria" agencyRef="gru">cvpi</Description>
+        <Description name="Charger" fullName="Dodge Charger" agencyRef="gru">charger</Description>
+        <Description name="FPIU" fullName="Ford Explorer" agencyRef="gru">fpiu</Description>
+        <Description name="Armoured Car" fullName="Lenco Bearcat" agencyRef="gru">armouredcar</Description>
+    </VehicleDescriptions>
+</Duty>

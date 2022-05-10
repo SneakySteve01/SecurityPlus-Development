@@ -1,0 +1,25 @@
+﻿====================================================
+Copyright © 2022 SneakySteve
+====================================================
+
+In this license, the "mod" or "modification" refers to all components of Security+, Security Plus or SecurityPlus that are original creations by SneakySteve. This includes all configuration files and script files authored by SneakySteve.
+"I", "my", "me", "author", and "owner" refer to SneakySteve.
+"You" and "your", refers to the user or anybody who has access to any of the files contained within this mod. 
+
+Your use of this mod is granted by permission only, and this permission may be revoked at any time for any reason. Action may be taken against you for violations of this license, even if you no longer possess any files from the mod. 
+By using or having any copies of any files contained in this mod, you agree to abide by the following license terms. 
+If you do not accept these terms, you must permanently delete any copies of the mod's files from your computer. Removing the files from your computer does not absolve you from any of the following terms. 
+This license agreement may be ammended at any time, without notice. The modified terms will become effective immediately when I make them publicly available. It is your responsibility to be aware of the current license agreement. 
+
+1) You may not redistribute, re-upload, or share with any other person any file contained within this modification, without my written permission. 
+
+2) You may not edit, reverse-engineer, decompile, tamper with, or otherwise mis-use any compiled code file in this modification, without my written permission. You may edit configuration files, but may not redistribute them without my written permission. 
+
+3) I cannot be held responsible for damage to your computer, software, game installation, rockstar account, or any other physical or digital property of yours. You are recommended to back up all files before using this mod. 
+
+4) I reserve the right to restrict commercial use of the modification. Commercial use includes, but is not limited to, recording videos of gameplay in which the mod is used. 
+
+Additionally, you acknowledge that: 
+
+1) All standard copyright laws apply. 
+2) THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

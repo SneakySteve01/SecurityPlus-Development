@@ -1,0 +1,12 @@
+<PoliceStations>
+	<Station>
+		<Name>Gruppe Sechs Corporate Office</Name>
+		<Agency>gru</Agency>
+		<ScriptName>gruoffice</ScriptName>
+		<Position>-196.9496f, -831.0863f, 30.75992f</Position>
+		<Heading>116.3795f</Heading>
+		<DropOffPosition>-194.079f, -832.2991f, 30.78524f</DropOffPosition>
+		<GaragePosition>-195.3494f, -835.0737f, 30.73014f; 119.0082f</GaragePosition>
+		<GarageSpawnPosition>-178.4412f, -832.4777f, 30.15549f; 160.966f</GarageSpawnPosition>
+	</Station>
+</PoliceStations>

@@ -1,0 +1,50 @@
+<Agencies>
+	<Agency>
+		<Name>Gruppe Sechs Security</Name>
+		<ShortName>GRU</ShortName>
+		<ScriptName>gru</ScriptName>
+		<TextureDictionary>dia_police</TextureDictionary>
+		<TextureName>dia_police</TextureName>
+		<Inventory>patrol</Inventory>
+		<Loadout>
+			<Name>Response Unit</Name>
+			<Vehicles>
+				<Vehicle>cvpi</Vehicle>
+				<Vehicle>charger</Vehicle>
+			</Vehicles>
+			<Peds>
+				<!-- 100% chance of male peds -->
+				<Ped inventory="grupatrol">s_m_m_security_01</Ped> 
+			</Peds>
+			<NumPeds min="1" max="2" />
+			<Flags>
+				<Flag>RespondsAsTransport</Flag> <!-- Makes the unit eligible to be called for prisoner transport.  Only use this if there will be free seats for prisoners. -->
+				<Flag>RespondsAsBackup</Flag>    <!-- Makes the unit eligible to be called as either Code 2, Code 3 or Pursuit backup. -->
+				<Flag>SpawnsAmbiently</Flag>     <!-- Makes the unit eligible to spawn ambiently - e.g. on patrol in the area or outside of police stations -->
+			</Flags>
+		</Loadout>
+	</Agency>
+	<Agency>
+		<Name>Gruppe Sechs Armoured Security</Name>
+		<ShortName>gru_swat</ShortName>
+		<ScriptName>gru_swat</ScriptName>
+		<Inventory>swat</Inventory>
+		<Parent>gru</Parent>
+		<Loadout>
+			<Name>Armoured Response Unit</Name>
+			<Vehicles>
+				<Vehicle>fpiu</Vehicle>
+			</Vehicles>
+			<Peds>
+				<Ped chance="50" inventory="gruswat">s_m_m_armoured_01</Ped> 
+				<Ped chance="50" inventory="gruswat">s_m_m_armoured_02</Ped> 
+			</Peds>
+			<NumPeds min="2" max="4" />
+			<Flags>
+				<Flag>SWAT</Flag> <!-- This is a special flag which enhances the combat abilities of all officers within the loadout. -->
+				<Flag>RespondsAsBackup</Flag>    <!-- Makes the unit eligible to be called as either Code 2, Code 3 or Pursuit backup. -->
+				<Flag>SpawnsAmbiently</Flag>     <!-- Makes the unit eligible to spawn ambiently - e.g. on patrol in the area or outside of police stations -->
+			</Flags> 
+		</Loadout>
+	</Agency>
+</Agencies>

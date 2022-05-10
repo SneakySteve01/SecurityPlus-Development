@@ -1,0 +1,52 @@
+<Inventories>
+	<Inventory>
+        <Name>GRU Response</Name>
+        <ScriptName>grupatrol</ScriptName>
+        <Weapon chance="10">
+            <Model>WEAPON_PUMPSHOTGUN</Model>
+            <Component>COMPONENT_AT_AR_FLSH</Component> <!-- Flashlight -->
+        </Weapon>
+        <Weapon chance="100">
+            <Model>WEAPON_PISTOL</Model>
+            <Component>COMPONENT_AT_PI_FLSH</Component> <!-- Flashlight -->
+        </Weapon>
+        <StunWeapon>WEAPON_STUNGUN</StunWeapon>
+        <Armor>50</Armor>
+    </Inventory>
+    <Inventory>
+        <Name>GRU Armoured Response</Name>
+        <ScriptName>gruswat</ScriptName>
+        <Weapon chance="80">
+            <Model>WEAPON_SMG</Model>
+            <Component>COMPONENT_AT_AR_FLSH</Component> <!-- Flashlight -->
+        </Weapon>
+        <Weapon chance="20">
+            <Model>WEAPON_PUMPSHOTGUN</Model>
+            <Component>COMPONENT_AT_AR_FLSH</Component> <!-- Flashlight -->
+        </Weapon>
+        <Weapon chance="100">
+            <Model>WEAPON_COMBATPISTOL</Model>
+            <Component>COMPONENT_AT_PI_FLSH</Component> <!-- Flashlight -->
+        </Weapon>
+        <StunWeapon>WEAPON_STUNGUN</StunWeapon>
+        <Armor>100</Armor>
+    </Inventory>
+	<Inventory>
+        <Name>GRU Transport Response</Name>
+        <ScriptName>grutransport</ScriptName>
+        <Weapon chance="80">
+            <Model>WEAPON_CARBINERIFLE</Model>
+            <Component>COMPONENT_AT_AR_FLSH</Component> <!-- Flashlight -->
+        </Weapon>
+        <Weapon chance="20">
+            <Model>WEAPON_PUMPSHOTGUN</Model>
+            <Component>COMPONENT_AT_AR_FLSH</Component> <!-- Flashlight -->
+        </Weapon>
+        <Weapon chance="100">
+            <Model>WEAPON_COMBATPISTOL</Model>
+            <Component>COMPONENT_AT_PI_FLSH</Component> <!-- Flashlight -->
+        </Weapon>
+        <StunWeapon>WEAPON_STUNGUN</StunWeapon>
+        <Armor>100</Armor>
+    </Inventory>
+</Inventories>

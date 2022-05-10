@@ -1,0 +1,29 @@
+1. Drag everything within the "Grand Theft Auto V" folder (not the folder itself) into your GTA5 directory (contains GTA5.exe) NOTE: This will overwrite EUP Wardrobe, if you do not want overwrite, do this transfer manually
+2. If you have EUP Serve & Rescue installed (recommended) go to "EUP Install" otherwise go to "Standard Install"
+
+==============
+EUP Install
+==============
+
+3. Go into the "EUP Install" folder, then drag everything from the "Grand Theft Auto V" folder (not the folder itself) into
+your GTA5 directory (contains GTA5.exe)
+4. If you are using UltimateBackup, drag the "SpecialUnits.xml" file from the "EUP Install" folder into the directory 
+"Grand Theft Auto V\plugins\LSPDFR\UltimateBackup"
+5. Go to the "Wrap Up" section
+
+==============
+Standard Install
+==============
+
+3. Go into the "Standard Install" folder, then drag everything from the "Grand Theft Auto V" folder (not the folder itself)
+into your GTA5 directory (contains GTA5.exe)
+4. If you are using UltimateBackup, drag the "SpecialUnits.xml" file from the "Standard Install" folder into the directory 
+"Grand Theft Auto V\plugins\LSPDFR\UltimateBackup"
+5. Go to the "Wrap Up" section
+
+==============
+Wrap Up
+==============
+
+6. Open "Security+.oiv" with OpenIV. Install it into your "mods" directory.
+7. That's it! All done.

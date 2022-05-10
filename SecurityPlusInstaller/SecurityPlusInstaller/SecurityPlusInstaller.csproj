@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{48703AFF-FA2E-433E-B895-A992763BC77A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SecurityPlusInstaller</RootNamespace>
+    <AssemblyName>SecurityPlusInstaller</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DownloadManager.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\HeapAdjuster.asi" />
+    <None Include="Resources\HeapConfig.ini" />
+    <None Include="Resources\RNUI_LICENSE.md" />
+    <None Include="Resources\RNUI_NOTICE.md" />
+    <None Include="Resources\Security+.oiv" />
+    <None Include="Resources\SecurityConfig.ini" />
+    <None Include="Resources\wardrobe.ini" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SecurityPlus.ini" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\active_shooter_ulsa.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\armoured_car_escort.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\armoured_car_money_transfer.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\casing_robbery.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\code_adam.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\consumer_refusing_to_pay.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fake_credentials.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guard_duty.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insurgency_sandy_air.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loitering.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open_carry.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\private_escort.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\residence_alarm.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\student_feeling_unsafe.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\student_in_distress.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sus_person_bank.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\activated.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\any_avail_armoured_security_officer.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\any_avail_security_officer.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\attention_avail_armoured_security.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\attention_avail_security.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RNUI_RAGENativeUI.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RNUI_RAGENativeUI.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RNUI_RAGENativeUI.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agency_gru.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\armouredcar.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\charger.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cvpi.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\duty_selection_gru.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eup_agency_gru.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eup_duty_selection_gru.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eup_inventory_gru.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eup_outfits_gru.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eup_SpecialUnits.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eup_stations_gru.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fpiu.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inventory_gru.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RNUI_RAGENativeUIDLL.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RNUI_RAGENativeUIPDB.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RNUI_RAGENativeUIXML.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpecialUnits.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stations_gru.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SecurityPlus.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

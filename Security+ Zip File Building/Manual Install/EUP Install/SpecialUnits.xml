@@ -1,0 +1,740 @@
+<!--
+  This file contains additional Special Units that will be added into the bottom of Ultimate Backup Menu (orange color)
+
+  Improtant notes:
+
+    # You may have as many as "SpecialUnit" tags as you want.
+
+    # The "SpecialUnit" children nodes can consist of the mix from default regions (e.g. LocalPatrol, etc.) and custom regions (which requires "Zones"). Please refer to the existing examples
+
+    # The "SpecialUnit" tag has the following attributes:
+      - "name" is the name of the special unit which reflects the text in the menu entry (mandatory)
+      - "role" is the role (AI) of that this special unit will play. Valid values are: "cop", "medic", or "fireman". (default="cop")
+      - "code2" is the flag (True or False) whether this special unit will be added into "Code 2" response
+      - "code3" is the flag (True or False) whether this special unit will be added into "Code 3" response
+      - "pursuit" is the flag (True or False) whether this special unit will be added into "Pursuit" response
+      - "traffic_stop" is the flag (True or False) whether this special unit will be added into "Traffic Stop" response
+      - "felony_stop" is the flag (True or False) whether this special unit will be added into "Felony Stop" response
+
+    # All "VehicleSets" (Vehicle & Ped, including weapons) definitions are the same as the ones in "DefaultRegion.xml" and "CustomRegions.xml"
+
+    # The XML format in this file is similar with "DefaultRegions.xml". Please refer to descriptions on that xml file.
+
+-->
+
+<UltimateBackup>
+	<SpecialUnit name="Police Bike" code2="True" code3="False" pursuit="True" traffic_stop="False" felony_stop="True">
+		<LosSantosCity>
+			<VehicleSet>
+				<Vehicles>
+					<Vehicle>POLICEB</Vehicle>
+				</Vehicles>
+				<Peds>
+					<Ped comp_shirt="2" comp_pants="1" comp_decals="2" prop_glasses="1" tex_glasses="1" prop_hats="1">S_M_Y_HWAYCOP_01</Ped>
+				</Peds>
+			</VehicleSet>
+		</LosSantosCity>
+		<LosSantosCounty>
+			<VehicleSet spawn_distance="150">
+				<Vehicles>
+					<Vehicle>POLICEB</Vehicle>
+				</Vehicles>
+				<Peds>
+					<Ped comp_shirt="2" comp_pants="1" comp_decals="2" prop_glasses="2" tex_glasses="1" prop_hats="1">S_M_Y_HWAYCOP_01</Ped>
+				</Peds>
+			</VehicleSet>
+		</LosSantosCounty>
+		<BlaineCounty>
+			<VehicleSet spawn_distance="150">
+				<Vehicles>
+					<Vehicle>POLICEB</Vehicle>
+				</Vehicles>
+				<Peds>
+					<Ped comp_shirt="2" comp_pants="1" comp_decals="2" prop_glasses="2" tex_glasses="1" prop_hats="1">S_M_Y_HWAYCOP_01</Ped>
+				</Peds>
+			</VehicleSet>
+		</BlaineCounty>
+		<NorthYankton>
+			<VehicleSet spawn_distance="150">
+				<Vehicles>
+					<Vehicle>POLICEB</Vehicle>
+				</Vehicles>
+				<Peds>
+					<Ped comp_shirt="2" comp_pants="1" comp_decals="2" prop_glasses="2" tex_glasses="1" prop_hats="1">S_M_Y_HWAYCOP_01</Ped>
+				</Peds>
+			</VehicleSet>
+		</NorthYankton>
+		<CustomRegion>
+			<Zones>
+				<Zone>DAVIS</Zone>
+			</Zones>
+			<VehicleSet>
+				<Vehicles>
+					<Vehicle>POLICEB</Vehicle>
+				</Vehicles>
+				<Peds>
+					<Ped comp_shirt="2" comp_pants="1" comp_decals="2" prop_glasses="0" prop_hats="1">S_M_Y_HWAYCOP_01</Ped>
+				</Peds>
+			</VehicleSet>
+		</CustomRegion>
+	</SpecialUnit>
+	<SpecialUnit name="Supervisor" code2="True" code3="False" pursuit="False" traffic_stop="True" felony_stop="False">
+		<LosSantosCity>
+			<VehicleSet>
+				<Vehicles>
+					<Vehicle>POLICE</Vehicle>
+				</Vehicles>
+				<Peds>
+					<Ped comp_shirt="2" comp_accessories="2" comp_decals="2" prop_glasses="0" prop_hats="0">S_M_Y_COP_01</Ped>
+				</Peds>
+			</VehicleSet>
+		</LosSantosCity>
+		<LosSantosCounty>
+			<VehicleSet spawn_distance="150">
+				<Vehicles>
+					<Vehicle>SHERIFF</Vehicle>
+				</Vehicles>
+				<Peds>
+					<Ped comp_shirt="2" prop_hats="2">S_M_Y_SHERIFF_01</Ped>
+				</Peds>
+			</VehicleSet>
+		</LosSantosCounty>
+		<BlaineCounty>
+			<VehicleSet spawn_distance="150">
+				<Vehicles>
+					<Vehicle>SHERIFF</Vehicle>
+				</Vehicles>
+				<Peds>
+					<Ped comp_shirt="2" prop_hats="2">S_M_Y_SHERIFF_01</Ped>
+				</Peds>
+			</VehicleSet>
+		</BlaineCounty>
+		<NorthYankton>
+			<VehicleSet spawn_distance="150">
+				<Vehicles>
+					<Vehicle>POLICEOLD2</Vehicle>
+				</Vehicles>
+				<Peds>
+					<Ped comp_accessories="1" prop_glasses="2" prop_hats="2">S_M_M_SNOWCOP_01</Ped>
+				</Peds>
+			</VehicleSet>
+		</NorthYankton>
+	</SpecialUnit>
+	<SpecialUnit name="First Responder (Medic)" role="medic" code2="False" code3="True" pursuit="False" traffic_stop="False" felony_stop="False">
+		<LosSantosCity>
+			<VehicleSet>
+				<Vehicles>
+					<Vehicle color="yellow">FBI2</Vehicle>
+				</Vehicles>
+				<Peds>
+					<Ped>S_M_Y_FIREMAN_01</Ped>
+				</Peds>
+			</VehicleSet>
+		</LosSantosCity>
+		<LosSantosCounty>
+			<VehicleSet spawn_distance="150">
+				<Vehicles>
+					<Vehicle color="orange">FBI2</Vehicle>
+				</Vehicles>
+				<Peds>
+					<Ped>S_M_Y_FIREMAN_01</Ped>
+				</Peds>
+			</VehicleSet>
+		</LosSantosCounty>
+		<BlaineCounty>
+			<VehicleSet spawn_distance="150">
+				<Vehicles>
+					<Vehicle color="orange">FBI2</Vehicle>
+				</Vehicles>
+				<Peds>
+					<Ped>S_M_Y_FIREMAN_01</Ped>
+				</Peds>
+			</VehicleSet>
+		</BlaineCounty>
+		<NorthYankton>
+			<VehicleSet spawn_distance="150">
+				<Vehicles>
+					<Vehicle color="orange">FBI2</Vehicle>
+				</Vehicles>
+				<Peds>
+					<Ped>S_M_Y_FIREMAN_01</Ped>
+				</Peds>
+			</VehicleSet>
+		</NorthYankton>
+	</SpecialUnit>
+	<SpecialUnit name="First Responder (Fire)" role="fireman" code2="False" code3="True" pursuit="False" traffic_stop="False" felony_stop="False">
+		<LosSantosCity>
+			<VehicleSet>
+				<Vehicles>
+					<Vehicle color="red">FBI2</Vehicle>
+				</Vehicles>
+				<Peds>
+					<Ped>S_M_Y_FIREMAN_01</Ped>
+				</Peds>
+			</VehicleSet>
+		</LosSantosCity>
+		<LosSantosCounty>
+			<VehicleSet spawn_distance="150">
+				<Vehicles>
+					<Vehicle color="white">FBI2</Vehicle>
+				</Vehicles>
+				<Peds>
+					<Ped>S_M_Y_FIREMAN_01</Ped>
+				</Peds>
+			</VehicleSet>
+		</LosSantosCounty>
+		<BlaineCounty>
+			<VehicleSet spawn_distance="150">
+				<Vehicles>
+					<Vehicle color="white">FBI2</Vehicle>
+				</Vehicles>
+				<Peds>
+					<Ped>S_M_Y_FIREMAN_01</Ped>
+				</Peds>
+			</VehicleSet>
+		</BlaineCounty>
+		<NorthYankton>
+			<VehicleSet spawn_distance="150">
+				<Vehicles>
+					<Vehicle color="white">FBI2</Vehicle>
+				</Vehicles>
+				<Peds>
+					<Ped>S_M_Y_FIREMAN_01</Ped>
+				</Peds>
+			</VehicleSet>
+		</NorthYankton>
+	</SpecialUnit>
+	<SpecialUnit name="Air Ambulance" role="medic" code2="False" code3="True" pursuit="False" traffic_stop="False" felony_stop="False">
+		<LosSantosCity>
+			<VehicleSet spawn_distance="200">
+				<Vehicles>
+					<Vehicle livery="2">POLMAV</Vehicle>
+				</Vehicles>
+				<Peds>
+					<Ped>S_M_M_PARAMEDIC_01</Ped>
+				</Peds>
+			</VehicleSet>
+		</LosSantosCity>
+		<LosSantosCounty>
+			<VehicleSet spawn_distance="250">
+				<Vehicles>
+					<Vehicle livery="2">POLMAV</Vehicle>
+				</Vehicles>
+				<Peds>
+					<Ped>S_M_M_PARAMEDIC_01</Ped>
+				</Peds>
+			</VehicleSet>
+		</LosSantosCounty>
+		<BlaineCounty>
+			<VehicleSet spawn_distance="250">
+				<Vehicles>
+					<Vehicle livery="2">POLMAV</Vehicle>
+				</Vehicles>
+				<Peds>
+					<Ped>S_M_M_PARAMEDIC_01</Ped>
+				</Peds>
+			</VehicleSet>
+		</BlaineCounty>
+		<NorthYankton>
+			<VehicleSet spawn_distance="250">
+				<Vehicles>
+					<Vehicle livery="2">POLMAV</Vehicle>
+				</Vehicles>
+				<Peds>
+					<Ped>S_M_M_PARAMEDIC_01</Ped>
+				</Peds>
+			</VehicleSet>
+		</NorthYankton>
+	</SpecialUnit>
+	<SpecialUnit name="Air SWAT Backup" role="cop" code2="False" code3="True" pursuit="False" traffic_stop="False" felony_stop="False">
+		<LosSantosCity>
+			<VehicleSet spawn_distance="200">
+				<Vehicles>
+					<Vehicle livery="1" pax="3" pax_chance="100">POLMAV</Vehicle>
+				</Vehicles>
+				<Peds>
+					<Ped comp_decals="1" tex_decals="1" prop_hats="1">S_M_Y_SWAT_01</Ped>
+				</Peds>
+				<NonLethals>
+					<NonLethal>WEAPON_STUNGUN</NonLethal>
+					<NonLethal>WEAPON_NIGHTSTICK</NonLethal>
+				</NonLethals>
+				<HandGuns>
+					<HandGun chance="75">WEAPON_COMBATPISTOL</HandGun>
+					<HandGun chance="25">WEAPON_PISTOL</HandGun>
+				</HandGuns>
+				<LongGuns>
+					<LongGun chance="67">WEAPON_ADVANCEDRIFLE</LongGun>
+					<LongGun chance="33">WEAPON_ASSAULTSHOTGUN</LongGun>
+				</LongGuns>
+			</VehicleSet>
+		</LosSantosCity>
+		<LosSantosCounty>
+			<VehicleSet spawn_distance="250">
+				<Vehicles>
+					<Vehicle livery="1" pax="3" pax_chance="100">POLMAV</Vehicle>
+				</Vehicles>
+				<Peds>
+					<Ped comp_decals="1" tex_decals="1" prop_hats="1">S_M_Y_SWAT_01</Ped>
+				</Peds>
+				<NonLethals>
+					<NonLethal>WEAPON_STUNGUN</NonLethal>
+					<NonLethal>WEAPON_NIGHTSTICK</NonLethal>
+				</NonLethals>
+				<HandGuns>
+					<HandGun chance="75">WEAPON_COMBATPISTOL</HandGun>
+					<HandGun chance="25">WEAPON_PISTOL</HandGun>
+				</HandGuns>
+				<LongGuns>
+					<LongGun chance="67">WEAPON_ADVANCEDRIFLE</LongGun>
+					<LongGun chance="33">WEAPON_ASSAULTSHOTGUN</LongGun>
+				</LongGuns>
+			</VehicleSet>
+		</LosSantosCounty>
+		<BlaineCounty>
+			<VehicleSet spawn_distance="250">
+				<Vehicles>
+					<Vehicle livery="1" pax="3" pax_chance="100">POLMAV</Vehicle>
+				</Vehicles>
+				<Peds>
+					<Ped comp_decals="1" tex_decals="1" prop_hats="1">S_M_Y_SWAT_01</Ped>
+				</Peds>
+				<NonLethals>
+					<NonLethal>WEAPON_STUNGUN</NonLethal>
+					<NonLethal>WEAPON_NIGHTSTICK</NonLethal>
+				</NonLethals>
+				<HandGuns>
+					<HandGun chance="75">WEAPON_COMBATPISTOL</HandGun>
+					<HandGun chance="25">WEAPON_PISTOL</HandGun>
+				</HandGuns>
+				<LongGuns>
+					<LongGun chance="67">WEAPON_ADVANCEDRIFLE</LongGun>
+					<LongGun chance="33">WEAPON_ASSAULTSHOTGUN</LongGun>
+				</LongGuns>
+			</VehicleSet>
+		</BlaineCounty>
+		<NorthYankton>
+			<VehicleSet spawn_distance="250">
+				<Vehicles>
+					<Vehicle livery="1" pax="3" pax_chance="100">POLMAV</Vehicle>
+				</Vehicles>
+				<Peds>
+					<Ped comp_decals="1" tex_decals="1" prop_hats="1">S_M_Y_SWAT_01</Ped>
+				</Peds>
+				<NonLethals>
+					<NonLethal>WEAPON_STUNGUN</NonLethal>
+					<NonLethal>WEAPON_NIGHTSTICK</NonLethal>
+				</NonLethals>
+				<HandGuns>
+					<HandGun chance="75">WEAPON_COMBATPISTOL</HandGun>
+					<HandGun chance="25">WEAPON_PISTOL</HandGun>
+				</HandGuns>
+				<LongGuns>
+					<LongGun chance="67">WEAPON_ADVANCEDRIFLE</LongGun>
+					<LongGun chance="33">WEAPON_ASSAULTSHOTGUN</LongGun>
+				</LongGuns>
+			</VehicleSet>
+		</NorthYankton>
+	</SpecialUnit>
+	
+	<SpecialUnit name="G6 Response Unit" role="cop" code2="True" code3="True" pursuit="True" traffic_stop="True" felony_stop="True">
+		<LosSantosCity>
+			<VehicleSet spawn_distance="200">
+				<Vehicles>
+					<Vehicle>CVPI</Vehicle>
+					<Vehicle>CHARGER</Vehicle>
+				</Vehicles>
+				<Peds>
+					<!-- 50% chance of male peds -->	
+						<!-- 1/3 of a chance outfit A -->
+						<Ped chance="16" prop_hats="42" comp_shirt="5" comp_pants="26" tex_pants="6" comp_hands="40" comp_shoes="52" comp_eyes="7" comp_accessories="39" tex_accessories="2" comp_tasks="14" comp_shirtoverlay="216" tex_shirtoverlay="3">mp_m_freemode_01</Ped>
+						<!-- 1/3 of a chance outfit B -->
+						<Ped chance="16" prop_hats="0" comp_shirt="5" comp_pants="26" tex_pants="6" comp_hands="40" comp_shoes="52" comp_eyes="7" comp_accessories="39" tex_accessories="2" comp_tasks="15" comp_shirtoverlay="215" tex_shirtoverlay="3">mp_m_freemode_01</Ped>
+						<!-- 1/3 of a chance outfit C -->
+						<Ped chance="16" prop_hats="11" tex_hats="3" comp_shirt="12" comp_pants="26" tex_pants="6" comp_hands="40" comp_shoes="52" comp_eyes="7" comp_accessories="39" tex_accessories="2" comp_tasks="14" comp_shirtoverlay="214" tex_shirtoverlay="3">mp_m_freemode_01</Ped>
+					<!-- 50% chance of female peds -->
+						<!-- 1/3 of a chance outfit A -->
+						<Ped chance="16" prop_hats="41" comp_shirt="4" comp_pants="4" tex_pants="10" comp_hands="40" comp_shoes="56" comp_eyes="7" comp_accessories="28" tex_accessories="1" comp_tasks="15" comp_shirtoverlay="220" tex_shirtoverlay="3">mp_f_freemode_01</Ped>
+						<!-- 1/3 of a chance outfit B -->
+						<Ped chance="16" prop_hats="0" comp_shirt="4" comp_pants="4" tex_pants="10" comp_hands="40" comp_shoes="56" comp_eyes="7" comp_accessories="28" tex_accessories="1" comp_tasks="17" comp_shirtoverlay="219" tex_shirtoverlay="3">mp_f_freemode_01</Ped>
+						<!-- 1/3 of a chance outfit C -->
+						<Ped chance="16" prop_hats="11" tex_hats="3" comp_shirt="10" comp_pants="4" tex_pants="10" comp_hands="40" comp_shoes="56" comp_eyes="7" comp_accessories="28" tex_accessories="1" comp_tasks="15" comp_shirtoverlay="218" tex_shirtoverlay="3">mp_f_freemode_01</Ped>
+				</Peds>
+				<NonLethals>
+					<NonLethal>WEAPON_STUNGUN</NonLethal>
+					<NonLethal>WEAPON_NIGHTSTICK</NonLethal>
+				</NonLethals>
+				<HandGuns>
+					<HandGun chance="100">WEAPON_PISTOL</HandGun>
+				</HandGuns>
+				<LongGuns>
+					<LongGun chance="10">WEAPON_PUMPSHOTGUN</LongGun>
+				</LongGuns>
+			</VehicleSet>
+		</LosSantosCity>
+		<LosSantosCounty>
+			<VehicleSet spawn_distance="200">
+				<Vehicles>
+					<Vehicle>CVPI</Vehicle>
+					<Vehicle>CHARGER</Vehicle>
+				</Vehicles>
+				<Peds>
+					<!-- 50% chance of male peds -->	
+						<!-- 1/3 of a chance outfit A -->
+						<Ped chance="16" prop_hats="42" comp_shirt="5" comp_pants="26" tex_pants="6" comp_hands="40" comp_shoes="52" comp_eyes="7" comp_accessories="39" tex_accessories="2" comp_tasks="14" comp_shirtoverlay="216" tex_shirtoverlay="3">mp_m_freemode_01</Ped>
+						<!-- 1/3 of a chance outfit B -->
+						<Ped chance="16" prop_hats="0" comp_shirt="5" comp_pants="26" tex_pants="6" comp_hands="40" comp_shoes="52" comp_eyes="7" comp_accessories="39" tex_accessories="2" comp_tasks="15" comp_shirtoverlay="215" tex_shirtoverlay="3">mp_m_freemode_01</Ped>
+						<!-- 1/3 of a chance outfit C -->
+						<Ped chance="16" prop_hats="11" tex_hats="3" comp_shirt="12" comp_pants="26" tex_pants="6" comp_hands="40" comp_shoes="52" comp_eyes="7" comp_accessories="39" tex_accessories="2" comp_tasks="14" comp_shirtoverlay="214" tex_shirtoverlay="3">mp_m_freemode_01</Ped>
+					<!-- 50% chance of female peds -->
+						<!-- 1/3 of a chance outfit A -->
+						<Ped chance="16" prop_hats="41" comp_shirt="4" comp_pants="4" tex_pants="10" comp_hands="40" comp_shoes="56" comp_eyes="7" comp_accessories="28" tex_accessories="1" comp_tasks="15" comp_shirtoverlay="220" tex_shirtoverlay="3">mp_f_freemode_01</Ped>
+						<!-- 1/3 of a chance outfit B -->
+						<Ped chance="16" prop_hats="0" comp_shirt="4" comp_pants="4" tex_pants="10" comp_hands="40" comp_shoes="56" comp_eyes="7" comp_accessories="28" tex_accessories="1" comp_tasks="17" comp_shirtoverlay="219" tex_shirtoverlay="3">mp_f_freemode_01</Ped>
+						<!-- 1/3 of a chance outfit C -->
+						<Ped chance="16" prop_hats="11" tex_hats="3" comp_shirt="10" comp_pants="4" tex_pants="10" comp_hands="40" comp_shoes="56" comp_eyes="7" comp_accessories="28" tex_accessories="1" comp_tasks="15" comp_shirtoverlay="218" tex_shirtoverlay="3">mp_f_freemode_01</Ped>
+				</Peds>
+				<NonLethals>
+					<NonLethal>WEAPON_STUNGUN</NonLethal>
+					<NonLethal>WEAPON_NIGHTSTICK</NonLethal>
+				</NonLethals>
+				<HandGuns>
+					<HandGun chance="100">WEAPON_PISTOL</HandGun>
+				</HandGuns>
+				<LongGuns>
+					<LongGun chance="10">WEAPON_PUMPSHOTGUN</LongGun>
+				</LongGuns>
+			</VehicleSet>
+		</LosSantosCounty>
+		<BlaineCounty>
+			<VehicleSet spawn_distance="200">
+				<Vehicles>
+					<Vehicle>CVPI</Vehicle>
+					<Vehicle>CHARGER</Vehicle>
+				</Vehicles>
+				<Peds>
+					<!-- 50% chance of male peds -->	
+						<!-- 1/3 of a chance outfit A -->
+						<Ped chance="16" prop_hats="42" comp_shirt="5" comp_pants="26" tex_pants="6" comp_hands="40" comp_shoes="52" comp_eyes="7" comp_accessories="39" tex_accessories="2" comp_tasks="14" comp_shirtoverlay="216" tex_shirtoverlay="3">mp_m_freemode_01</Ped>
+						<!-- 1/3 of a chance outfit B -->
+						<Ped chance="16" prop_hats="0" comp_shirt="5" comp_pants="26" tex_pants="6" comp_hands="40" comp_shoes="52" comp_eyes="7" comp_accessories="39" tex_accessories="2" comp_tasks="15" comp_shirtoverlay="215" tex_shirtoverlay="3">mp_m_freemode_01</Ped>
+						<!-- 1/3 of a chance outfit C -->
+						<Ped chance="16" prop_hats="11" tex_hats="3" comp_shirt="12" comp_pants="26" tex_pants="6" comp_hands="40" comp_shoes="52" comp_eyes="7" comp_accessories="39" tex_accessories="2" comp_tasks="14" comp_shirtoverlay="214" tex_shirtoverlay="3">mp_m_freemode_01</Ped>
+					<!-- 50% chance of female peds -->
+						<!-- 1/3 of a chance outfit A -->
+						<Ped chance="16" prop_hats="41" comp_shirt="4" comp_pants="4" tex_pants="10" comp_hands="40" comp_shoes="56" comp_eyes="7" comp_accessories="28" tex_accessories="1" comp_tasks="15" comp_shirtoverlay="220" tex_shirtoverlay="3">mp_f_freemode_01</Ped>
+						<!-- 1/3 of a chance outfit B -->
+						<Ped chance="16" prop_hats="0" comp_shirt="4" comp_pants="4" tex_pants="10" comp_hands="40" comp_shoes="56" comp_eyes="7" comp_accessories="28" tex_accessories="1" comp_tasks="17" comp_shirtoverlay="219" tex_shirtoverlay="3">mp_f_freemode_01</Ped>
+						<!-- 1/3 of a chance outfit C -->
+						<Ped chance="16" prop_hats="11" tex_hats="3" comp_shirt="10" comp_pants="4" tex_pants="10" comp_hands="40" comp_shoes="56" comp_eyes="7" comp_accessories="28" tex_accessories="1" comp_tasks="15" comp_shirtoverlay="218" tex_shirtoverlay="3">mp_f_freemode_01</Ped>
+				</Peds>
+				<NonLethals>
+					<NonLethal>WEAPON_STUNGUN</NonLethal>
+					<NonLethal>WEAPON_NIGHTSTICK</NonLethal>
+				</NonLethals>
+				<HandGuns>
+					<HandGun chance="100">WEAPON_PISTOL</HandGun>
+				</HandGuns>
+				<LongGuns>
+					<LongGun chance="10">WEAPON_PUMPSHOTGUN</LongGun>
+				</LongGuns>
+			</VehicleSet>
+		</BlaineCounty>
+		<NorthYankton>
+			<VehicleSet spawn_distance="200">
+				<Vehicles>
+					<Vehicle>CVPI</Vehicle>
+					<Vehicle>CHARGER</Vehicle>
+				</Vehicles>
+				<Peds>
+					<!-- 50% chance of male peds -->	
+						<!-- 1/3 of a chance outfit A -->
+						<Ped chance="16" prop_hats="42" comp_shirt="5" comp_pants="26" tex_pants="6" comp_hands="40" comp_shoes="52" comp_eyes="7" comp_accessories="39" tex_accessories="2" comp_tasks="14" comp_shirtoverlay="216" tex_shirtoverlay="3">mp_m_freemode_01</Ped>
+						<!-- 1/3 of a chance outfit B -->
+						<Ped chance="16" prop_hats="0" comp_shirt="5" comp_pants="26" tex_pants="6" comp_hands="40" comp_shoes="52" comp_eyes="7" comp_accessories="39" tex_accessories="2" comp_tasks="15" comp_shirtoverlay="215" tex_shirtoverlay="3">mp_m_freemode_01</Ped>
+						<!-- 1/3 of a chance outfit C -->
+						<Ped chance="16" prop_hats="11" tex_hats="3" comp_shirt="12" comp_pants="26" tex_pants="6" comp_hands="40" comp_shoes="52" comp_eyes="7" comp_accessories="39" tex_accessories="2" comp_tasks="14" comp_shirtoverlay="214" tex_shirtoverlay="3">mp_m_freemode_01</Ped>
+					<!-- 50% chance of female peds -->
+						<!-- 1/3 of a chance outfit A -->
+						<Ped chance="16" prop_hats="41" comp_shirt="4" comp_pants="4" tex_pants="10" comp_hands="40" comp_shoes="56" comp_eyes="7" comp_accessories="28" tex_accessories="1" comp_tasks="15" comp_shirtoverlay="220" tex_shirtoverlay="3">mp_f_freemode_01</Ped>
+						<!-- 1/3 of a chance outfit B -->
+						<Ped chance="16" prop_hats="0" comp_shirt="4" comp_pants="4" tex_pants="10" comp_hands="40" comp_shoes="56" comp_eyes="7" comp_accessories="28" tex_accessories="1" comp_tasks="17" comp_shirtoverlay="219" tex_shirtoverlay="3">mp_f_freemode_01</Ped>
+						<!-- 1/3 of a chance outfit C -->
+						<Ped chance="16" prop_hats="11" tex_hats="3" comp_shirt="10" comp_pants="4" tex_pants="10" comp_hands="40" comp_shoes="56" comp_eyes="7" comp_accessories="28" tex_accessories="1" comp_tasks="15" comp_shirtoverlay="218" tex_shirtoverlay="3">mp_f_freemode_01</Ped>
+				</Peds>
+				<NonLethals>
+					<NonLethal>WEAPON_STUNGUN</NonLethal>
+					<NonLethal>WEAPON_NIGHTSTICK</NonLethal>
+				</NonLethals>
+				<HandGuns>
+					<HandGun chance="100">WEAPON_PISTOL</HandGun>
+				</HandGuns>
+				<LongGuns>
+					<LongGun chance="10">WEAPON_PUMPSHOTGUN</LongGun>
+				</LongGuns>
+			</VehicleSet>
+		</NorthYankton>
+	</SpecialUnit>
+	
+	<SpecialUnit name="G6 Armoured Unit" role="cop" code2="True" code3="True" pursuit="True" traffic_stop="True" felony_stop="True">
+		<LosSantosCity>
+			<VehicleSet spawn_distance="200">
+				<Vehicles>
+					<Vehicle>FPIU</Vehicle>
+				</Vehicles>
+				<Peds>
+					<!-- 50% chance of male peds -->	
+						<!-- 1/3 of a chance outfit A -->
+						<Ped chance="16" prop_hats="42" comp_shirt="5" comp_pants="26" tex_pants="7" comp_hands="21" comp_shoes="52" comp_eyes="9" comp_accessories="39" tex_accessories="2" comp_tasks="3" tex_tasks="3" comp_shirtoverlay="215" tex_shirtoverlay="3">mp_m_freemode_01</Ped>
+						<!-- 1/3 of a chance outfit B -->
+						<Ped chance="16" prop_hats="0" comp_shirt="5" comp_pants="26" tex_pants="7" comp_hands="21" comp_shoes="52" comp_eyes="9" comp_accessories="39" tex_accessories="2" comp_tasks="3" tex_tasks="3" comp_shirtoverlay="215" tex_shirtoverlay="3">mp_m_freemode_01</Ped>
+						<!-- 1/3 of a chance outfit C -->
+						<Ped chance="16" prop_hats="11" tex_hats="3" comp_shirt="12" comp_pants="26" tex_pants="7" comp_hands="21" comp_shoes="52" comp_eyes="9" comp_accessories="39" tex_accessories="2" comp_tasks="3" tex_tasks="3" comp_shirtoverlay="214" tex_shirtoverlay="3">mp_m_freemode_01</Ped>
+					<!-- 50% chance of female peds -->
+						<!-- 1/3 of a chance outfit A -->
+						<Ped chance="16" prop_hats="41" comp_shirt="4" comp_pants="4" tex_pants="16" comp_hands="21" comp_shoes="56" comp_eyes="9" comp_accessories="28" tex_accessories="1" comp_tasks="3" tex_tasks="3" comp_shirtoverlay="219" tex_shirtoverlay="3">mp_f_freemode_01</Ped>
+						<!-- 1/3 of a chance outfit B -->
+						<Ped chance="16" prop_hats="0" comp_shirt="4" comp_pants="4" tex_pants="16" comp_hands="21" comp_shoes="56" comp_eyes="9" comp_accessories="28" tex_accessories="1" comp_tasks="3" tex_tasks="3" comp_shirtoverlay="219" tex_shirtoverlay="3">mp_f_freemode_01</Ped>
+						<!-- 1/3 of a chance outfit C -->
+						<Ped chance="16" prop_hats="11" tex_hats="3" comp_shirt="10" comp_pants="4" tex_pants="16" comp_hands="21" comp_shoes="56" comp_eyes="9" comp_accessories="28" tex_accessories="1" comp_tasks="3" tex_tasks="3" comp_shirtoverlay="218" tex_shirtoverlay="3">mp_f_freemode_01</Ped>
+				</Peds>
+				<NonLethals>
+					<NonLethal>WEAPON_STUNGUN</NonLethal>
+					<NonLethal>WEAPON_NIGHTSTICK</NonLethal>
+				</NonLethals>
+				<HandGuns>
+					<HandGun chance="100">WEAPON_COMBATPISTOL</HandGun>
+				</HandGuns>
+				<LongGuns>
+					<LongGun chance="20">WEAPON_PUMPSHOTGUN</LongGun>
+					<LongGun chance="80">WEAPON_SMG</LongGun>
+				</LongGuns>
+			</VehicleSet>
+		</LosSantosCity>
+		<LosSantosCounty>
+			<VehicleSet spawn_distance="200">
+				<Vehicles>
+					<Vehicle>FPIU</Vehicle>
+				</Vehicles>
+				<Peds>
+					<!-- 50% chance of male peds -->	
+						<!-- 1/3 of a chance outfit A -->
+						<Ped chance="16" prop_hats="42" comp_shirt="5" comp_pants="26" tex_pants="7" comp_hands="21" comp_shoes="52" comp_eyes="9" comp_accessories="39" tex_accessories="2" comp_tasks="3" tex_tasks="3" comp_shirtoverlay="215" tex_shirtoverlay="3">mp_m_freemode_01</Ped>
+						<!-- 1/3 of a chance outfit B -->
+						<Ped chance="16" prop_hats="0" comp_shirt="5" comp_pants="26" tex_pants="7" comp_hands="21" comp_shoes="52" comp_eyes="9" comp_accessories="39" tex_accessories="2" comp_tasks="3" tex_tasks="3" comp_shirtoverlay="215" tex_shirtoverlay="3">mp_m_freemode_01</Ped>
+						<!-- 1/3 of a chance outfit C -->
+						<Ped chance="16" prop_hats="11" tex_hats="3" comp_shirt="12" comp_pants="26" tex_pants="7" comp_hands="21" comp_shoes="52" comp_eyes="9" comp_accessories="39" tex_accessories="2" comp_tasks="3" tex_tasks="3" comp_shirtoverlay="214" tex_shirtoverlay="3">mp_m_freemode_01</Ped>
+					<!-- 50% chance of female peds -->
+						<!-- 1/3 of a chance outfit A -->
+						<Ped chance="16" prop_hats="41" comp_shirt="4" comp_pants="4" tex_pants="16" comp_hands="21" comp_shoes="56" comp_eyes="9" comp_accessories="28" tex_accessories="1" comp_tasks="3" tex_tasks="3" comp_shirtoverlay="219" tex_shirtoverlay="3">mp_f_freemode_01</Ped>
+						<!-- 1/3 of a chance outfit B -->
+						<Ped chance="16" prop_hats="0" comp_shirt="4" comp_pants="4" tex_pants="16" comp_hands="21" comp_shoes="56" comp_eyes="9" comp_accessories="28" tex_accessories="1" comp_tasks="3" tex_tasks="3" comp_shirtoverlay="219" tex_shirtoverlay="3">mp_f_freemode_01</Ped>
+						<!-- 1/3 of a chance outfit C -->
+						<Ped chance="16" prop_hats="11" tex_hats="3" comp_shirt="10" comp_pants="4" tex_pants="16" comp_hands="21" comp_shoes="56" comp_eyes="9" comp_accessories="28" tex_accessories="1" comp_tasks="3" tex_tasks="3" comp_shirtoverlay="218" tex_shirtoverlay="3">mp_f_freemode_01</Ped>
+				</Peds>
+				<NonLethals>
+					<NonLethal>WEAPON_STUNGUN</NonLethal>
+					<NonLethal>WEAPON_NIGHTSTICK</NonLethal>
+				</NonLethals>
+				<HandGuns>
+					<HandGun chance="100">WEAPON_COMBATPISTOL</HandGun>
+				</HandGuns>
+				<LongGuns>
+					<LongGun chance="20">WEAPON_PUMPSHOTGUN</LongGun>
+					<LongGun chance="80">WEAPON_SMG</LongGun>
+				</LongGuns>
+			</VehicleSet>
+		</LosSantosCounty>
+		<BlaineCounty>
+			<VehicleSet spawn_distance="200">
+				<Vehicles>
+					<Vehicle>FPIU</Vehicle>
+				</Vehicles>
+				<Peds>
+					<!-- 50% chance of male peds -->	
+						<!-- 1/3 of a chance outfit A -->
+						<Ped chance="16" prop_hats="42" comp_shirt="5" comp_pants="26" tex_pants="7" comp_hands="21" comp_shoes="52" comp_eyes="9" comp_accessories="39" tex_accessories="2" comp_tasks="3" tex_tasks="3" comp_shirtoverlay="215" tex_shirtoverlay="3">mp_m_freemode_01</Ped>
+						<!-- 1/3 of a chance outfit B -->
+						<Ped chance="16" prop_hats="0" comp_shirt="5" comp_pants="26" tex_pants="7" comp_hands="21" comp_shoes="52" comp_eyes="9" comp_accessories="39" tex_accessories="2" comp_tasks="3" tex_tasks="3" comp_shirtoverlay="215" tex_shirtoverlay="3">mp_m_freemode_01</Ped>
+						<!-- 1/3 of a chance outfit C -->
+						<Ped chance="16" prop_hats="11" tex_hats="3" comp_shirt="12" comp_pants="26" tex_pants="7" comp_hands="21" comp_shoes="52" comp_eyes="9" comp_accessories="39" tex_accessories="2" comp_tasks="3" tex_tasks="3" comp_shirtoverlay="214" tex_shirtoverlay="3">mp_m_freemode_01</Ped>
+					<!-- 50% chance of female peds -->
+						<!-- 1/3 of a chance outfit A -->
+						<Ped chance="16" prop_hats="41" comp_shirt="4" comp_pants="4" tex_pants="16" comp_hands="21" comp_shoes="56" comp_eyes="9" comp_accessories="28" tex_accessories="1" comp_tasks="3" tex_tasks="3" comp_shirtoverlay="219" tex_shirtoverlay="3">mp_f_freemode_01</Ped>
+						<!-- 1/3 of a chance outfit B -->
+						<Ped chance="16" prop_hats="0" comp_shirt="4" comp_pants="4" tex_pants="16" comp_hands="21" comp_shoes="56" comp_eyes="9" comp_accessories="28" tex_accessories="1" comp_tasks="3" tex_tasks="3" comp_shirtoverlay="219" tex_shirtoverlay="3">mp_f_freemode_01</Ped>
+						<!-- 1/3 of a chance outfit C -->
+						<Ped chance="16" prop_hats="11" tex_hats="3" comp_shirt="10" comp_pants="4" tex_pants="16" comp_hands="21" comp_shoes="56" comp_eyes="9" comp_accessories="28" tex_accessories="1" comp_tasks="3" tex_tasks="3" comp_shirtoverlay="218" tex_shirtoverlay="3">mp_f_freemode_01</Ped>
+				</Peds>
+				<NonLethals>
+					<NonLethal>WEAPON_STUNGUN</NonLethal>
+					<NonLethal>WEAPON_NIGHTSTICK</NonLethal>
+				</NonLethals>
+				<HandGuns>
+					<HandGun chance="100">WEAPON_COMBATPISTOL</HandGun>
+				</HandGuns>
+				<LongGuns>
+					<LongGun chance="20">WEAPON_PUMPSHOTGUN</LongGun>
+					<LongGun chance="80">WEAPON_SMG</LongGun>
+				</LongGuns>
+			</VehicleSet>
+		</BlaineCounty>
+		<NorthYankton>
+			<VehicleSet spawn_distance="200">
+				<Vehicles>
+					<Vehicle>FPIU</Vehicle>
+				</Vehicles>
+				<Peds>
+					<!-- 50% chance of male peds -->	
+						<!-- 1/3 of a chance outfit A -->
+						<Ped chance="16" prop_hats="42" comp_shirt="5" comp_pants="26" tex_pants="7" comp_hands="21" comp_shoes="52" comp_eyes="9" comp_accessories="39" tex_accessories="2" comp_tasks="3" tex_tasks="3" comp_shirtoverlay="215" tex_shirtoverlay="3">mp_m_freemode_01</Ped>
+						<!-- 1/3 of a chance outfit B -->
+						<Ped chance="16" prop_hats="0" comp_shirt="5" comp_pants="26" tex_pants="7" comp_hands="21" comp_shoes="52" comp_eyes="9" comp_accessories="39" tex_accessories="2" comp_tasks="3" tex_tasks="3" comp_shirtoverlay="215" tex_shirtoverlay="3">mp_m_freemode_01</Ped>
+						<!-- 1/3 of a chance outfit C -->
+						<Ped chance="16" prop_hats="11" tex_hats="3" comp_shirt="12" comp_pants="26" tex_pants="7" comp_hands="21" comp_shoes="52" comp_eyes="9" comp_accessories="39" tex_accessories="2" comp_tasks="3" tex_tasks="3" comp_shirtoverlay="214" tex_shirtoverlay="3">mp_m_freemode_01</Ped>
+					<!-- 50% chance of female peds -->
+						<!-- 1/3 of a chance outfit A -->
+						<Ped chance="16" prop_hats="41" comp_shirt="4" comp_pants="4" tex_pants="16" comp_hands="21" comp_shoes="56" comp_eyes="9" comp_accessories="28" tex_accessories="1" comp_tasks="3" tex_tasks="3" comp_shirtoverlay="219" tex_shirtoverlay="3">mp_f_freemode_01</Ped>
+						<!-- 1/3 of a chance outfit B -->
+						<Ped chance="16" prop_hats="0" comp_shirt="4" comp_pants="4" tex_pants="16" comp_hands="21" comp_shoes="56" comp_eyes="9" comp_accessories="28" tex_accessories="1" comp_tasks="3" tex_tasks="3" comp_shirtoverlay="219" tex_shirtoverlay="3">mp_f_freemode_01</Ped>
+						<!-- 1/3 of a chance outfit C -->
+						<Ped chance="16" prop_hats="11" tex_hats="3" comp_shirt="10" comp_pants="4" tex_pants="16" comp_hands="21" comp_shoes="56" comp_eyes="9" comp_accessories="28" tex_accessories="1" comp_tasks="3" tex_tasks="3" comp_shirtoverlay="218" tex_shirtoverlay="3">mp_f_freemode_01</Ped>
+				</Peds>
+				<NonLethals>
+					<NonLethal>WEAPON_STUNGUN</NonLethal>
+					<NonLethal>WEAPON_NIGHTSTICK</NonLethal>
+				</NonLethals>
+				<HandGuns>
+					<HandGun chance="100">WEAPON_COMBATPISTOL</HandGun>
+				</HandGuns>
+				<LongGuns>
+					<LongGun chance="20">WEAPON_PUMPSHOTGUN</LongGun>
+					<LongGun chance="80">WEAPON_SMG</LongGun>
+				</LongGuns>
+			</VehicleSet>
+		</NorthYankton>
+	</SpecialUnit>
+	
+	<SpecialUnit name="G6 Transport Unit" role="cop" code2="True" code3="True" pursuit="True" traffic_stop="True" felony_stop="True">
+		<LosSantosCity>
+			<VehicleSet spawn_distance="200">
+				<Vehicles>
+					<Vehicle>ARMOUREDCAR</Vehicle>
+				</Vehicles>
+				<Peds>
+					<!-- 50% chance of male peds -->	
+						<!-- 1/2 of a chance outfit A -->
+						<Ped chance="25" prop_hats="145" comp_shirt="5" comp_pants="26" tex_pants="7" comp_hands="21" comp_shoes="52" comp_eyes="2" comp_accessories="39" tex_accessories="1" comp_tasks="3" tex_tasks="3" comp_shirtoverlay="215" tex_shirtoverlay="2">mp_m_freemode_01</Ped>
+						<!-- 1/2 of a chance outfit B -->
+						<Ped chance="25" prop_hats="145" comp_shirt="12" comp_pants="26" tex_pants="7" comp_hands="21" comp_shoes="52" comp_eyes="2" comp_accessories="39" tex_accessories="1" comp_tasks="3" tex_tasks="3" comp_shirtoverlay="214" tex_shirtoverlay="2">mp_m_freemode_01</Ped>
+					<!-- 50% chance of female peds -->
+						<!-- 1/2 of a chance outfit A -->
+						<Ped chance="25" prop_hats="144" comp_shirt="4" comp_pants="4" tex_pants="16" comp_hands="21" comp_shoes="56" comp_eyes="2" comp_accessories="28" tex_accessories="2" comp_tasks="3" tex_tasks="3" comp_shirtoverlay="219" tex_shirtoverlay="2">mp_f_freemode_01</Ped>
+						<!-- 1/2 of a chance outfit B -->
+						<Ped chance="25" prop_hats="144" comp_shirt="10" comp_pants="4" tex_pants="16" comp_hands="21" comp_shoes="56" comp_eyes="9" comp_accessories="28" tex_accessories="2" comp_tasks="3" tex_tasks="3" comp_shirtoverlay="218" tex_shirtoverlay="2">mp_f_freemode_01</Ped>
+				</Peds>
+				<NonLethals>
+					<NonLethal>WEAPON_STUNGUN</NonLethal>
+					<NonLethal>WEAPON_NIGHTSTICK</NonLethal>
+				</NonLethals>
+				<HandGuns>
+					<HandGun chance="100">WEAPON_COMBATPISTOL</HandGun>
+				</HandGuns>
+				<LongGuns>
+					<LongGun chance="20">WEAPON_PUMPSHOTGUN</LongGun>
+					<LongGun chance="80">WEAPON_CARBINERIFLE</LongGun>
+				</LongGuns>
+			</VehicleSet>
+		</LosSantosCity>
+		<LosSantosCounty>
+			<VehicleSet spawn_distance="200">
+				<Vehicles>
+					<Vehicle>ARMOUREDCAR</Vehicle>
+				</Vehicles>
+				<Peds>
+					<!-- 50% chance of male peds -->	
+						<!-- 1/2 of a chance outfit A -->
+						<Ped chance="25" prop_hats="145" comp_shirt="5" comp_pants="26" tex_pants="7" comp_hands="21" comp_shoes="52" comp_eyes="2" comp_accessories="39" tex_accessories="1" comp_tasks="3" tex_tasks="3" comp_shirtoverlay="215" tex_shirtoverlay="2">mp_m_freemode_01</Ped>
+						<!-- 1/2 of a chance outfit B -->
+						<Ped chance="25" prop_hats="145" comp_shirt="12" comp_pants="26" tex_pants="7" comp_hands="21" comp_shoes="52" comp_eyes="2" comp_accessories="39" tex_accessories="1" comp_tasks="3" tex_tasks="3" comp_shirtoverlay="214" tex_shirtoverlay="2">mp_m_freemode_01</Ped>
+					<!-- 50% chance of female peds -->
+						<!-- 1/2 of a chance outfit A -->
+						<Ped chance="25" prop_hats="144" comp_shirt="4" comp_pants="4" tex_pants="16" comp_hands="21" comp_shoes="56" comp_eyes="2" comp_accessories="28" tex_accessories="2" comp_tasks="3" tex_tasks="3" comp_shirtoverlay="219" tex_shirtoverlay="2">mp_f_freemode_01</Ped>
+						<!-- 1/2 of a chance outfit B -->
+						<Ped chance="25" prop_hats="144" comp_shirt="10" comp_pants="4" tex_pants="16" comp_hands="21" comp_shoes="56" comp_eyes="9" comp_accessories="28" tex_accessories="2" comp_tasks="3" tex_tasks="3" comp_shirtoverlay="218" tex_shirtoverlay="2">mp_f_freemode_01</Ped>
+				</Peds>
+				<NonLethals>
+					<NonLethal>WEAPON_STUNGUN</NonLethal>
+					<NonLethal>WEAPON_NIGHTSTICK</NonLethal>
+				</NonLethals>
+				<HandGuns>
+					<HandGun chance="100">WEAPON_COMBATPISTOL</HandGun>
+				</HandGuns>
+				<LongGuns>
+					<LongGun chance="20">WEAPON_PUMPSHOTGUN</LongGun>
+					<LongGun chance="80">WEAPON_CARBINERIFLE</LongGun>
+				</LongGuns>
+			</VehicleSet>
+		</LosSantosCounty>
+		<BlaineCounty>
+			<VehicleSet spawn_distance="200">
+				<Vehicles>
+					<Vehicle>ARMOUREDCAR</Vehicle>
+				</Vehicles>
+				<Peds>
+					<!-- 50% chance of male peds -->	
+						<!-- 1/2 of a chance outfit A -->
+						<Ped chance="25" prop_hats="145" comp_shirt="5" comp_pants="26" tex_pants="7" comp_hands="21" comp_shoes="52" comp_eyes="2" comp_accessories="39" tex_accessories="1" comp_tasks="3" tex_tasks="3" comp_shirtoverlay="215" tex_shirtoverlay="2">mp_m_freemode_01</Ped>
+						<!-- 1/2 of a chance outfit B -->
+						<Ped chance="25" prop_hats="145" comp_shirt="12" comp_pants="26" tex_pants="7" comp_hands="21" comp_shoes="52" comp_eyes="2" comp_accessories="39" tex_accessories="1" comp_tasks="3" tex_tasks="3" comp_shirtoverlay="214" tex_shirtoverlay="2">mp_m_freemode_01</Ped>
+					<!-- 50% chance of female peds -->
+						<!-- 1/2 of a chance outfit A -->
+						<Ped chance="25" prop_hats="144" comp_shirt="4" comp_pants="4" tex_pants="16" comp_hands="21" comp_shoes="56" comp_eyes="2" comp_accessories="28" tex_accessories="2" comp_tasks="3" tex_tasks="3" comp_shirtoverlay="219" tex_shirtoverlay="2">mp_f_freemode_01</Ped>
+						<!-- 1/2 of a chance outfit B -->
+						<Ped chance="25" prop_hats="144" comp_shirt="10" comp_pants="4" tex_pants="16" comp_hands="21" comp_shoes="56" comp_eyes="9" comp_accessories="28" tex_accessories="2" comp_tasks="3" tex_tasks="3" comp_shirtoverlay="218" tex_shirtoverlay="2">mp_f_freemode_01</Ped>
+				</Peds>
+				<NonLethals>
+					<NonLethal>WEAPON_STUNGUN</NonLethal>
+					<NonLethal>WEAPON_NIGHTSTICK</NonLethal>
+				</NonLethals>
+				<HandGuns>
+					<HandGun chance="100">WEAPON_COMBATPISTOL</HandGun>
+				</HandGuns>
+				<LongGuns>
+					<LongGun chance="20">WEAPON_PUMPSHOTGUN</LongGun>
+					<LongGun chance="80">WEAPON_CARBINERIFLE</LongGun>
+				</LongGuns>
+			</VehicleSet>
+		</BlaineCounty>
+		<NorthYankton>
+			<VehicleSet spawn_distance="200">
+				<Vehicles>
+					<Vehicle>ARMOUREDCAR</Vehicle>
+				</Vehicles>
+				<Peds>
+					<!-- 50% chance of male peds -->	
+						<!-- 1/2 of a chance outfit A -->
+						<Ped chance="25" prop_hats="145" comp_shirt="5" comp_pants="26" tex_pants="7" comp_hands="21" comp_shoes="52" comp_eyes="2" comp_accessories="39" tex_accessories="1" comp_tasks="3" tex_tasks="3" comp_shirtoverlay="215" tex_shirtoverlay="2">mp_m_freemode_01</Ped>
+						<!-- 1/2 of a chance outfit B -->
+						<Ped chance="25" prop_hats="145" comp_shirt="12" comp_pants="26" tex_pants="7" comp_hands="21" comp_shoes="52" comp_eyes="2" comp_accessories="39" tex_accessories="1" comp_tasks="3" tex_tasks="3" comp_shirtoverlay="214" tex_shirtoverlay="2">mp_m_freemode_01</Ped>
+					<!-- 50% chance of female peds -->
+						<!-- 1/2 of a chance outfit A -->
+						<Ped chance="25" prop_hats="144" comp_shirt="4" comp_pants="4" tex_pants="16" comp_hands="21" comp_shoes="56" comp_eyes="2" comp_accessories="28" tex_accessories="2" comp_tasks="3" tex_tasks="3" comp_shirtoverlay="219" tex_shirtoverlay="2">mp_f_freemode_01</Ped>
+						<!-- 1/2 of a chance outfit B -->
+						<Ped chance="25" prop_hats="144" comp_shirt="10" comp_pants="4" tex_pants="16" comp_hands="21" comp_shoes="56" comp_eyes="9" comp_accessories="28" tex_accessories="2" comp_tasks="3" tex_tasks="3" comp_shirtoverlay="218" tex_shirtoverlay="2">mp_f_freemode_01</Ped>
+				</Peds>
+				<NonLethals>
+					<NonLethal>WEAPON_STUNGUN</NonLethal>
+					<NonLethal>WEAPON_NIGHTSTICK</NonLethal>
+				</NonLethals>
+				<HandGuns>
+					<HandGun chance="100">WEAPON_COMBATPISTOL</HandGun>
+				</HandGuns>
+				<LongGuns>
+					<LongGun chance="20">WEAPON_PUMPSHOTGUN</LongGun>
+					<LongGun chance="80">WEAPON_CARBINERIFLE</LongGun>
+				</LongGuns>
+			</VehicleSet>
+		</NorthYankton>
+	</SpecialUnit>
+</UltimateBackup>

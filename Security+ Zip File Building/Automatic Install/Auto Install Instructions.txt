@@ -1,0 +1,11 @@
+The Security+ Auto Installer is still in BETA. It may not function as intended, please follow these instructions to ensure the best result.
+
+1. Make sure you have OpenIV installed aswell as the OpenIV.ASI package installed.
+2. Make sure you have the .oiv filetype associated with the OpenIV program.
+3. Make sure you have Open All Interiors installed.
+4. Launch "Security+ Auto Installer.exe"
+5. Select your GTAV Directory (Contains GTA5.exe)
+6. If you have EUP Serve and Rescue installed (recommended) then check the EUP box
+7. If you have UltimateBackup installed (recommended) then check the UltimateBackup box
+8. Press "Install"
+9. Enjoy!

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package version="2.1" id="{A7805C28-27C7-49E3-BEAA-72AF41938859}" target="Five">
+<metadata>
+<name>Security+</name>
+<version>
+<major>1</major>
+<minor>0</minor>
+<tag>Beta</tag>
+</version>
+<author>
+<displayName>SneakySteve</displayName>
+<actionLink>https://www.lcpdfr.com/profile/357281-sneakysteve/</actionLink>
+<web>https://www.technostudios.org</web>
+</author>
+<description><![CDATA[Security+ will add 4 new vehicles under the spawn codes of
+grucharger
+grucvpi
+grufpiu
+armouredcar
+Enjoy!]]></description>
+<licence><![CDATA[Credits in LICENSE and README files.]]></licence>
+</metadata>
+<colors>
+<headerBackground useBlackTextColor="False">$FF008000</headerBackground>
+<iconBackground>$FF00FF00</iconBackground>
+</colors>
+<content>
+<archive path="update\x64\dlcpacks\securityplus\dlc.rpf" createIfNotExist="True" type="RPF7">
+	<add source="content/xml/content.xml">content.xml</add>
+	<add source="setup2/xml/setup2.xml">setup2.xml</add>
+	<add source="vehiclesmeta/vehicles.meta">data\vehicles.meta</add>
+	<add source="dlctextmeta/dlctext.meta">data\dlctext.meta</add>
+	<add source="carvariationsmeta/carvariations.meta">data\carvariations.meta</add>
+	<add source="caraddoncontentunlocksmeta/caraddoncontentunlocks.meta">data\caraddoncontentunlocks.meta</add>
+		<archive path="\x64\vehicles.rpf" createIfNotExist="True" type="RPF7">
+			<add source="grucharger/vehicles/grucharger.yft">\grucharger.yft</add>
+			<add source="grucharger/vehicles/grucharger.ytd">\grucharger.ytd</add>
+			<add source="grucharger/vehicles/grucharger_hi.yft">\grucharger_hi.yft</add>
+			<add source="grucvpi/vehicles/grucvpi.yft">\grucvpi.yft</add>
+			<add source="grucvpi/vehicles/grucvpi.ytd">\grucvpi.ytd</add>
+			<add source="grucvpi/vehicles/grucvpi_hi.yft">\grucvpi_hi.yft</add>
+			<add source="grufpiu/vehicles/grufpiu.yft">\grufpiu.yft</add>
+			<add source="grufpiu/vehicles/grufpiu.ytd">\grufpiu.ytd</add>
+			<add source="grufpiu/vehicles/grufpiu_hi.yft">\grufpiu_hi.yft</add>
+			<add source="armouredcar/vehicles/armouredcar.yft">\armouredcar.yft</add>
+			<add source="armouredcar/vehicles/armouredcar.ytd">\armouredcar.ytd</add>
+			<add source="armouredcar/vehicles/armouredcar_hi.yft">\armouredcar_hi.yft</add>
+		</archive>
+</archive>
+<archive path="update/update.rpf" createIfNotExist="True" type="RPF7">
+      <xml path="common/data/dlclist.xml">
+        <add xpath="SMandatoryPacksData/Paths">
+          <item>dlcpacks:/securityplus/</item>
+        </add>
+      </xml>
+      <xml path ="common/data/extratitleupdatedata.meta">
+        <add xpath="SExtraTitleUpdateData/Mounts">
+          <Item type="SExtraTitleUpdateMount">
+            <deviceName>dlc_securityplus:/</deviceName>
+            <path>update:/dlc_patch/securityplus/</path>
+          </Item>
+        </add>
+      </xml>
+    </archive>
+</content>
+</package>

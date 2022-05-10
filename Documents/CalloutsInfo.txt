@@ -1,0 +1,19 @@
+StudentRequestingHelp 2 scenarios
+StudentFeelingUnsafe 3 scenarios
+ULSACampusAttack 3 scenarios
+SheriffRequestingSecurity 1 scenarios
+CodeAdam 2 scenarios
+OpenCarry 2 scenarios
+RefusingToPay 2 scenarios
+Casing 2 scenarios
+Loiter 2 scenarios
+BankTellerSusPerson 3 scenarios
+Guard Duty 5 scenarios
+FakeCredentials 2 scenarios
+ArmouredCarDriverNeeded 3 scenarios
+ArmouredCarEscort 3 scenarios
+ResidenceAlarm 1 scenarios
+
+Total Callouts: 15
+Total Scenarios: 36
+Total Locations: 50

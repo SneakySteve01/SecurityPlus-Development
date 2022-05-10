@@ -1,0 +1,21 @@
+C:\Users\Owner\Desktop\Bugs Bunny's Pocket\Active production\SecurityPlusInstaller\SecurityPlusInstaller\bin\Debug\SecurityPlusInstaller.exe.config
+C:\Users\Owner\Desktop\Bugs Bunny's Pocket\Active production\SecurityPlusInstaller\SecurityPlusInstaller\bin\Debug\SecurityPlusInstaller.exe
+C:\Users\Owner\Desktop\Bugs Bunny's Pocket\Active production\SecurityPlusInstaller\SecurityPlusInstaller\bin\Debug\SecurityPlusInstaller.pdb
+C:\Users\Owner\Desktop\Bugs Bunny's Pocket\Active production\SecurityPlusInstaller\SecurityPlusInstaller\obj\Debug\SecurityPlusInstaller.csprojAssemblyReference.cache
+C:\Users\Owner\Desktop\Bugs Bunny's Pocket\Active production\SecurityPlusInstaller\SecurityPlusInstaller\obj\Debug\SecurityPlusInstaller.Form1.resources
+C:\Users\Owner\Desktop\Bugs Bunny's Pocket\Active production\SecurityPlusInstaller\SecurityPlusInstaller\obj\Debug\SecurityPlusInstaller.Properties.Resources.resources
+C:\Users\Owner\Desktop\Bugs Bunny's Pocket\Active production\SecurityPlusInstaller\SecurityPlusInstaller\obj\Debug\SecurityPlusInstaller.csproj.GenerateResource.cache
+C:\Users\Owner\Desktop\Bugs Bunny's Pocket\Active production\SecurityPlusInstaller\SecurityPlusInstaller\obj\Debug\SecurityPlusInstaller.csproj.CoreCompileInputs.cache
+C:\Users\Owner\Desktop\Bugs Bunny's Pocket\Active production\SecurityPlusInstaller\SecurityPlusInstaller\obj\Debug\SecurityPlusInstaller.exe
+C:\Users\Owner\Desktop\Bugs Bunny's Pocket\Active production\SecurityPlusInstaller\SecurityPlusInstaller\obj\Debug\SecurityPlusInstaller.pdb
+C:\Users\Owner\Desktop\Bugs Bunny's Pocket\Active production\Security+ Development\SecurityPlusInstaller\SecurityPlusInstaller\obj\Debug\SecurityPlusInstaller.csproj.AssemblyReference.cache
+C:\Users\Owner\Desktop\Bugs Bunny's Pocket\Active production\Security+ Development\SecurityPlusInstaller\SecurityPlusInstaller\obj\Debug\SecurityPlusInstaller.csproj.SuggestedBindingRedirects.cache
+C:\Users\Owner\Desktop\Bugs Bunny's Pocket\Active production\Security+ Development\SecurityPlusInstaller\SecurityPlusInstaller\obj\Debug\SecurityPlusInstaller.Form1.resources
+C:\Users\Owner\Desktop\Bugs Bunny's Pocket\Active production\Security+ Development\SecurityPlusInstaller\SecurityPlusInstaller\obj\Debug\SecurityPlusInstaller.Properties.Resources.resources
+C:\Users\Owner\Desktop\Bugs Bunny's Pocket\Active production\Security+ Development\SecurityPlusInstaller\SecurityPlusInstaller\obj\Debug\SecurityPlusInstaller.csproj.GenerateResource.cache
+C:\Users\Owner\Desktop\Bugs Bunny's Pocket\Active production\Security+ Development\SecurityPlusInstaller\SecurityPlusInstaller\obj\Debug\SecurityPlusInstaller.csproj.CoreCompileInputs.cache
+C:\Users\Owner\Desktop\Bugs Bunny's Pocket\Active production\Security+ Development\SecurityPlusInstaller\SecurityPlusInstaller\obj\Debug\SecurityPlusInstaller.exe
+C:\Users\Owner\Desktop\Bugs Bunny's Pocket\Active production\Security+ Development\SecurityPlusInstaller\SecurityPlusInstaller\obj\Debug\SecurityPlusInstaller.pdb
+C:\Users\Owner\Desktop\Bugs Bunny's Pocket\Active production\Security+ Development\SecurityPlusInstaller\SecurityPlusInstaller\bin\Debug\SecurityPlusInstaller.exe.config
+C:\Users\Owner\Desktop\Bugs Bunny's Pocket\Active production\Security+ Development\SecurityPlusInstaller\SecurityPlusInstaller\bin\Debug\SecurityPlusInstaller.exe
+C:\Users\Owner\Desktop\Bugs Bunny's Pocket\Active production\Security+ Development\SecurityPlusInstaller\SecurityPlusInstaller\bin\Debug\SecurityPlusInstaller.pdb
